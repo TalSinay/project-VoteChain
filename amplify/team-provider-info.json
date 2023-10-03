@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-votechain-staging-101203-authRole",
+      "UnauthRoleArn": "arn:aws:iam::675160181353:role/amplify-votechain-staging-101203-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::675160181353:role/amplify-votechain-staging-101203-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-votechain-staging-101203-deployment",
+      "UnauthRoleName": "amplify-votechain-staging-101203-unauthRole",
+      "StackName": "amplify-votechain-staging-101203",
+      "StackId": "arn:aws:cloudformation:us-east-1:675160181353:stack/amplify-votechain-staging-101203/4dfa10a0-5d1e-11ee-a3c2-0a0a2e1f820f",
+      "AmplifyAppId": "d1otq2gsyz2wct"
+    }
+  }
+}

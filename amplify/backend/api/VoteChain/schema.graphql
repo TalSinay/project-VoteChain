@@ -1,0 +1,22 @@
+type Candidates @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  candidate: String
+  votes: Int
+  Votes: [Votes] @hasMany(indexName: "byCandidates", fields: ["id"])
+}
+
+type Votes @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  candidatesID: ID! @index(name: "byCandidates")
+}
+
+type Users @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  phone: AWSPhone
+  email: AWSEmail
+  password: String
+  birthday: AWSDate
+  UserVote: Votes @hasOne
+  city: String
+}
